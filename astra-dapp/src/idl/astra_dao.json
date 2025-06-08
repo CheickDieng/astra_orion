@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0",
+  "name": "astra_dao",
+  "instructions": [
+    {
+      "name": "createProposal",
+      "accounts": [
+        { "name": "proposal", "isMut": true, "isSigner": false },
+        { "name": "author", "isMut": true, "isSigner": true },
+        { "name": "systemProgram", "isMut": false, "isSigner": false }
+      ],
+      "args": [
+        { "name": "title", "type": "string" },
+        { "name": "description", "type": "string" }
+      ]
+    }
+  ]
+}
